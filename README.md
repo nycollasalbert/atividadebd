@@ -16,4 +16,6 @@ O diagrama renderizado está na seção [Diagrama Mermaid da Questão 1](questao
 
 ## Resultado da consulta
 
+O script foi executado com sucesso no PostgreSQL 17.11 por meio do `psql`.
+
 ![Resultado da consulta final](questao-1/imagens/resultado-consulta.png)

@@ -178,6 +178,6 @@ erDiagram
 
 ## 6. Resultado da consulta complementar
 
-A imagem abaixo foi gerada a partir da execução validada da consulta final de [`projeto.sql`](projeto.sql).
+A imagem abaixo foi gerada após a execução integral de [`projeto.sql`](projeto.sql) no PostgreSQL 17.11 por meio do `psql`. O DDL, os índices, as inserções e o `SELECT` final foram concluídos sem erros.
 
 ![Resultado da consulta final](imagens/resultado-consulta.png)

@@ -17,7 +17,7 @@
   <rect x="24" y="92" width="1752" height="22" fill="#172554"/>
 
   <text x="52" y="62" class="title">Resultado da consulta final</text>
-  <text x="52" y="91" class="subtitle">questao-1/projeto.sql · PostgreSQL compatível · 6 registros retornados</text>
+  <text x="52" y="91" class="subtitle">questao-1/projeto.sql · PostgreSQL 17.11 · psql · 6 registros retornados</text>
 
   <rect x="24" y="114" width="1752" height="58" fill="#1e3a8a"/>
   <text x="42" y="149" class="head">#</text>
@@ -131,5 +131,5 @@
   <text x="1725" y="585" class="cell num muted">—</text>
 
   <line x1="24" y1="628" x2="1776" y2="628" stroke="#cbd5e1"/>
-  <text x="52" y="657" class="subtitle" fill="#64748b">Imagem gerada a partir da execução validada do script; “—” representa valor nulo.</text>
+  <text x="52" y="657" class="subtitle" fill="#64748b">Imagem gerada a partir da execução real no PostgreSQL; “—” representa valor nulo.</text>
 </svg>
