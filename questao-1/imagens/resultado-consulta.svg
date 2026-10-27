@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="700" viewBox="0 0 1800 700">
+  <defs>
+    <style>
+      .title { font: 700 30px 'DejaVu Sans', sans-serif; fill: #f8fafc; }
+      .subtitle { font: 16px 'DejaVu Sans', sans-serif; fill: #cbd5e1; }
+      .head { font: 700 14px 'DejaVu Sans Mono', monospace; fill: #f8fafc; }
+      .cell { font: 14px 'DejaVu Sans Mono', monospace; fill: #172033; }
+      .muted { fill: #64748b; }
+      .ok { fill: #15803d; font-weight: 700; }
+      .num { text-anchor: end; }
+    </style>
+  </defs>
+
+  <rect width="1800" height="700" fill="#f1f5f9"/>
+  <rect x="24" y="22" width="1752" height="656" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+  <rect x="24" y="22" width="1752" height="92" rx="12" fill="#172554"/>
+  <rect x="24" y="92" width="1752" height="22" fill="#172554"/>
+
+  <text x="52" y="62" class="title">Resultado da consulta final</text>
+  <text x="52" y="91" class="subtitle">questao-1/projeto.sql · PostgreSQL compatível · 6 registros retornados</text>
+
+  <rect x="24" y="114" width="1752" height="58" fill="#1e3a8a"/>
+  <text x="42" y="149" class="head">#</text>
+  <text x="78" y="149" class="head">PARTICIPANTE</text>
+  <text x="350" y="149" class="head">TIPO</text>
+  <text x="545" y="149" class="head">CLUBE</text>
+  <text x="710" y="149" class="head">CATEGORIA</text>
+  <text x="820" y="149" class="head">PROVA</text>
+  <text x="1090" y="149" class="head">SÉRIE</text>
+  <text x="1150" y="149" class="head">RAIA</text>
+  <text x="1210" y="149" class="head">BALIZAMENTO</text>
+  <text x="1342" y="149" class="head">COL.</text>
+  <text x="1400" y="149" class="head">STATUS</text>
+  <text x="1530" y="149" class="head">TEMPO</text>
+  <text x="1670" y="149" class="head">PONTOS</text>
+
+  <!-- Linha 1 -->
+  <rect x="24" y="172" width="1752" height="76" fill="#ffffff"/>
+  <text x="42" y="205" class="cell muted">1</text>
+  <text x="78" y="205" class="cell">AABB RECIFE A</text>
+  <text x="350" y="205" class="cell">Revezamento</text>
+  <text x="545" y="205" class="cell">AABB-RECIFE</text>
+  <text x="710" y="205" class="cell">Mirim 2</text>
+  <text x="820" y="205" class="cell">200m Medley Misto</text>
+  <text x="1115" y="205" class="cell num">1</text>
+  <text x="1175" y="205" class="cell num">2</text>
+  <text x="1210" y="205" class="cell">00:03:36.20</text>
+  <text x="1360" y="205" class="cell num">1</text>
+  <text x="1400" y="205" class="cell ok">CLASSIFICADO</text>
+  <text x="1530" y="205" class="cell">00:03:36.80</text>
+  <text x="1725" y="205" class="cell num">50.00</text>
+
+  <!-- Linha 2 -->
+  <rect x="24" y="248" width="1752" height="76" fill="#eff6ff"/>
+  <text x="42" y="281" class="cell muted">2</text>
+  <text x="78" y="281" class="cell">DIEGO GAMA RODRIGUES</text>
+  <text x="350" y="281" class="cell">Atleta</text>
+  <text x="545" y="281" class="cell">FENIX/NADART/AL</text>
+  <text x="710" y="281" class="cell">Mirim 2</text>
+  <text x="820" y="281" class="cell">50m Livre Masculino</text>
+  <text x="1115" y="281" class="cell num">1</text>
+  <text x="1175" y="281" class="cell num">4</text>
+  <text x="1210" y="281" class="cell">00:00:35.87</text>
+  <text x="1360" y="281" class="cell num">1</text>
+  <text x="1400" y="281" class="cell ok">CLASSIFICADO</text>
+  <text x="1530" y="281" class="cell">00:00:34.40</text>
+  <text x="1725" y="281" class="cell num">25.00</text>
+
+  <!-- Linha 3 -->
+  <rect x="24" y="324" width="1752" height="76" fill="#ffffff"/>
+  <text x="42" y="357" class="cell muted">3</text>
+  <text x="78" y="357" class="cell">ESTER MANUELA GOMES</text>
+  <text x="350" y="357" class="cell">Atleta</text>
+  <text x="545" y="357" class="cell">MASSAYO/STYLO/AL</text>
+  <text x="710" y="357" class="cell">Mirim 2</text>
+  <text x="820" y="357" class="cell">50m Costas Feminino</text>
+  <text x="1115" y="357" class="cell num">1</text>
+  <text x="1175" y="357" class="cell num">4</text>
+  <text x="1210" y="357" class="cell">00:01:03.23</text>
+  <text x="1360" y="357" class="cell num muted">—</text>
+  <text x="1400" y="357" class="cell muted">—</text>
+  <text x="1530" y="357" class="cell muted">—</text>
+  <text x="1725" y="357" class="cell num muted">—</text>
+
+  <!-- Linha 4 -->
+  <rect x="24" y="400" width="1752" height="76" fill="#eff6ff"/>
+  <text x="42" y="433" class="cell muted">4</text>
+  <text x="78" y="433" class="cell">ESTER MANUELA GOMES</text>
+  <text x="350" y="433" class="cell">Atleta</text>
+  <text x="545" y="433" class="cell">MASSAYO/STYLO/AL</text>
+  <text x="710" y="433" class="cell">Mirim 2</text>
+  <text x="820" y="433" class="cell">50m Livre Feminino</text>
+  <text x="1115" y="433" class="cell num">1</text>
+  <text x="1175" y="433" class="cell num">5</text>
+  <text x="1210" y="433" class="cell">00:00:46.08</text>
+  <text x="1360" y="433" class="cell num">2</text>
+  <text x="1400" y="433" class="cell ok">CLASSIFICADO</text>
+  <text x="1530" y="433" class="cell">00:00:45.10</text>
+  <text x="1725" y="433" class="cell num">22.00</text>
+
+  <!-- Linha 5 -->
+  <rect x="24" y="476" width="1752" height="76" fill="#ffffff"/>
+  <text x="42" y="509" class="cell muted">5</text>
+  <text x="78" y="509" class="cell">FRANCISCO CLEMENTE DUARTE</text>
+  <text x="350" y="509" class="cell">Atleta</text>
+  <text x="545" y="509" class="cell">AADC/AL</text>
+  <text x="710" y="509" class="cell">Pré-Mirim</text>
+  <text x="820" y="509" class="cell">50m Livre Masculino</text>
+  <text x="1115" y="509" class="cell num">1</text>
+  <text x="1175" y="509" class="cell num">4</text>
+  <text x="1210" y="509" class="cell muted">—</text>
+  <text x="1360" y="509" class="cell num muted">—</text>
+  <text x="1400" y="509" class="cell muted">—</text>
+  <text x="1530" y="509" class="cell muted">—</text>
+  <text x="1725" y="509" class="cell num muted">—</text>
+
+  <!-- Linha 6 -->
+  <rect x="24" y="552" width="1752" height="76" fill="#eff6ff"/>
+  <text x="42" y="585" class="cell muted">6</text>
+  <text x="78" y="585" class="cell">FRANCISCO CLEMENTE DUARTE</text>
+  <text x="350" y="585" class="cell">Atleta</text>
+  <text x="545" y="585" class="cell">AADC/AL</text>
+  <text x="710" y="585" class="cell">Pré-Mirim</text>
+  <text x="820" y="585" class="cell">50m Borboleta Masc.</text>
+  <text x="1115" y="585" class="cell num">1</text>
+  <text x="1175" y="585" class="cell num">4</text>
+  <text x="1210" y="585" class="cell muted">—</text>
+  <text x="1360" y="585" class="cell num muted">—</text>
+  <text x="1400" y="585" class="cell muted">—</text>
+  <text x="1530" y="585" class="cell muted">—</text>
+  <text x="1725" y="585" class="cell num muted">—</text>
+
+  <line x1="24" y1="628" x2="1776" y2="628" stroke="#cbd5e1"/>
+  <text x="52" y="657" class="subtitle" fill="#64748b">Imagem gerada a partir da execução validada do script; “—” representa valor nulo.</text>
+</svg>

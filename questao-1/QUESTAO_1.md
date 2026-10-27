@@ -175,3 +175,9 @@ erDiagram
 - O valor `99:99.99` exibido quando não existe tempo de balizamento deve ser normalizado como ausência de valor, e não armazenado como um horário válido.
 - `indice_tecnico`, `tempo_obtido` e `pontuacao` pertencem a `RESULTADO`, conforme as colunas exibidas no portal.
 - `status_prova` pertence a `PROVA`, pois a página indica situações como `FINAL` e `CONCLUÍDA` para cada prova.
+
+## 6. Resultado da consulta complementar
+
+A imagem abaixo foi gerada a partir da execução validada da consulta final de [`projeto.sql`](projeto.sql).
+
+![Resultado da consulta final](imagens/resultado-consulta.png)

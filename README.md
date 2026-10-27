@@ -10,7 +10,10 @@ Entrega da modelagem de dados com Mermaid, baseada nos dados apresentados na pá
 
 O diagrama foi validado com: parser Mermaid.
 
-## Diagrama ENTIDADE RELACIONAMETO
+## Diagrama entidade-relacionamento
 
-O diagrama renderizado está na seção [Diagrama Mermaid da Questão 1](questao-1/QUESTAO_1.md#4-diagrama-mermaid). O código-fonte copiável está em [`questao-1/modelo-er.mmd`](questao-1/m
-odelo-er.mmd).
+O diagrama renderizado está na seção [Diagrama Mermaid da Questão 1](questao-1/QUESTAO_1.md#4-diagrama-mermaid). O código-fonte copiável está em [`questao-1/modelo-er.mmd`](questao-1/modelo-er.mmd).
+
+## Resultado da consulta
+
+![Resultado da consulta final](questao-1/imagens/resultado-consulta.png)
