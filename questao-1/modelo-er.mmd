@@ -1,0 +1,111 @@
+erDiagram
+    %% EVENTO representa a edição da competição; ETAPA organiza seu cronograma.
+    EVENTO {
+        int id_evento PK
+        string nome_evento UK "UK composta com edicao"
+        int edicao UK "UK composta com nome_evento"
+        string local_evento
+        string tipo_piscina
+        date data_inicio
+        date data_fim
+    }
+
+    ETAPA {
+        int id_etapa PK
+        int id_evento FK, UK "UK composta com numero_etapa"
+        int numero_etapa UK "UK composta com id_evento"
+        date data_etapa
+        time horario_aquecimento
+        time horario_inicio
+    }
+
+    %% O portal usa o termo ENTIDADE; no domínio ele representa clube ou equipe.
+    CLUBE {
+        int id_clube PK
+        string sigla_clube UK
+        string nome_clube
+        string uf
+    }
+
+    %% A categoria pertence ao EVENTO e usa os anos de nascimento vistos no portal.
+    CATEGORIA {
+        int id_categoria PK
+        int id_evento FK, UK "UK composta com nome_categoria"
+        string nome_categoria UK "UK composta com id_evento"
+        string sigla_categoria
+        int ano_nascimento_inicio
+        int ano_nascimento_fim
+    }
+
+    ATLETA {
+        int id_atleta PK
+        int registro_cbda UK
+        string nome_atleta
+        int ano_nascimento
+        string genero
+        int id_clube FK
+    }
+
+    %% Revezamentos aparecem como equipes (ex.: AABB RECIFE A), não como pessoas.
+    EQUIPE_REVEZAMENTO {
+        int id_equipe_revezamento PK
+        int id_clube FK, UK "UK composta com nome_equipe"
+        string nome_equipe UK "UK composta com id_clube"
+    }
+
+    %% A página exibe distância, estilo, gênero, classe, status e número de séries.
+    PROVA {
+        int id_prova PK
+        int id_etapa FK, UK "UK composta com numero_prova"
+        int id_categoria FK
+        int numero_prova UK "UK composta com id_etapa"
+        int distancia
+        string estilo
+        string genero
+        string tipo_prova
+        string status_prova
+    }
+
+    %% Uma prova pode ter várias séries; prova sem atleta pode ter zero séries.
+    SERIE {
+        int id_serie PK
+        int id_prova FK, UK "UK composta com numero_serie"
+        int numero_serie UK "UK composta com id_prova"
+        string fase
+        time horario_serie
+    }
+
+    %% INSCRICAO resolve o N:N entre ATLETA e PROVA e guarda o balizamento.
+    INSCRICAO {
+        int id_inscricao PK
+        int id_atleta FK "opcional em revezamento"
+        int id_equipe_revezamento FK "opcional em prova individual"
+        int id_prova FK
+        int id_serie FK "opcional antes do balizamento"
+        int raia
+        time tempo_balizamento
+        date data_inscricao
+    }
+
+    %% PK compartilhada torna RESULTADO dependente e único por INSCRICAO.
+    RESULTADO {
+        int id_inscricao PK, FK
+        int colocacao
+        time tempo_obtido
+        decimal indice_tecnico
+        decimal pontuacao
+        string status_resultado
+    }
+
+    EVENTO ||..|{ ETAPA : "possui"
+    EVENTO ||..|{ CATEGORIA : "define"
+    ETAPA ||..|{ PROVA : "programa"
+    CATEGORIA ||..o{ PROVA : "classifica"
+    CLUBE ||..o{ ATLETA : "representa"
+    CLUBE ||..o{ EQUIPE_REVEZAMENTO : "inscreve"
+    PROVA ||..o{ SERIE : "divide-se em"
+    ATLETA o|..o{ INSCRICAO : "participa individualmente"
+    EQUIPE_REVEZAMENTO o|..o{ INSCRICAO : "participa do revezamento"
+    PROVA ||..o{ INSCRICAO : "recebe"
+    SERIE o|..o{ INSCRICAO : "aloca"
+    INSCRICAO ||--o| RESULTADO : "gera"
