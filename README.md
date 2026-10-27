@@ -1,4 +1,4 @@
-# 29º Troféu Alexandre Pussieldi — Questão 1
+# 29º Troféu Alexandre Pussieldi — Q1
 
 Entrega da modelagem de dados com Mermaid, baseada nos dados apresentados na página oficial de provas do evento.
 
